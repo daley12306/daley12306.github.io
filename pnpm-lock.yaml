@@ -166,7 +166,7 @@ importers:
         specifier: ^13.0.2
         version: 13.0.2(postcss@8.5.3)
       stylus:
-        specifier: link:local-packages\stylus-0.64.0
+        specifier: link:local-packages/stylus-0.64.0
         version: link:local-packages/stylus-0.64.0
 
 packages:
