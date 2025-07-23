@@ -55,13 +55,18 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Daley",
-	bio: "Tớ là một cô gái thích dữ liệu, thích code và làm những điều thú vị.",
+	bio: "🚀 Data girl on a mission to master data engineering ✨",
 	links: [
 		{
-			name: "Linkedin",
-			icon: "fa6-brands:linkedin", // Visit https://icones.js.org/ for icon codes
+			name: "Facebook",
+			icon: "fa6-brands:facebook", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
+			url: "https://facebook.com/daley12306",
+		},
+		{
+			name: "Linkedin",
+			icon: "fa6-brands:linkedin",
 			url: "https://www.linkedin.com/in/thienphuc2306/",
 		},
 		{

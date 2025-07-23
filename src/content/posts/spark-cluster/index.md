@@ -1,17 +1,20 @@
 ---
-title: Cài đặt Spark Cluster trên Hadoop
+title: Cài đặt Apache Spark Cluster trên Hadoop 3.x
 published: 2025-07-23
-description: ''
+description: 'Bài viết này sẽ bao quát cách cài đặt và cấu hình Spark Cluster'
 image: ''
 tags: [Hadoop, Spark, Big Data]
 category: 'Data Engineering'
-draft: false 
-lang: 'vi'
+draft: false
 ---
 
-## Yêu cầu
+## Yêu cầu hệ thống
 
-Trước khi cài đặt, mọi người cần phải cài đặt, thiết lập và kết nối thành công các máy master và slave lại với nhau trước nhé.
+Trước khi cài đặt, hãy đảm bảo bạn đã có sẵn:
+- Hai máy chạy hệ điều hành **Ubuntu** (hoặc hệ thống tương tự Unix) và đã cài đặt **Hadoop 3.x**
+- Cả hai máy phải kết nối chung một mạng LAN (ping được nhau)
+- Đã cài đặt **Java 8+** trên cả master và slave
+- Đã thiết lập **SSH** giữa master và slave
 
 ---
 
@@ -20,7 +23,7 @@ Trước khi cài đặt, mọi người cần phải cài đặt, thiết lập
 | Role     | IP Address       | Username          |
 |----------|------------------|-------------------|
 | Master   | `192.168.211.11` | `hadoopthienphuc` |
-| Worker 1 | `192.168.211.13` | `hadoopthienphuc` |
+| Slave    | `192.168.211.13` | `hadoopthienphuc` |
 
 ---
 
@@ -150,7 +153,11 @@ Mở trình duyệt và truy cập:
 
 🔗 [http://192.168.211.11:8080](http://192.168.211.11:8080)
 
+![Kết quả](./result.png)
+
 Bạn sẽ thấy thông tin:
 - Spark Master đang chạy
 - Worker được kết nối (từ IP `192.168.211.13`)
+
+
 
